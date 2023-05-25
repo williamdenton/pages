@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <a class="bookmarklet" data-prefix="Drag this bookmarklet to the favourites bar, and then click the bookmarklet from a JIRA ticket page"
-        href="javascript:document.location = 'https://robfe.github.io/pages/jiranator/#'+encodeURIComponent(document.location.pathname.replace('/youtrack/issue/', '').replace('/', '-')">JIRA Halper</a>
+    <a class="bookmarklet" data-prefix="Drag this bookmarklet to the favourites bar, and then click the bookmarklet from a YouTrack ticket page"
+        href="javascript:document.location = 'javascript:document.location='https://william.denton.nz/pages/docs/jiranator/#'+encodeURIComponent(document.location.pathname.replace(/(\/youtrack\/issue\/([A-Z]{2,4}-[0-9]{1,5})(\/.*)?)/, "$2-") + document.getElementsByTagName('h1')[0].innerText)">YouTrack Halper</a>
     <br />
     <h1>Options:</h1>
     <label for="ticket">Branch Name:</label>
