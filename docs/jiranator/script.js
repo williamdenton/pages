@@ -1,6 +1,6 @@
 function UpdateTemplate() {
   var s = decodeURIComponent(document.location.hash) || "???";
-  s = s.replace(/ /g, "-").replace(/^#/, "").replace(/[^\w-]/g, "");
+  s = s.replace(/ /g, "-").replace(/^#/, "").replace(/[^\w-/]/g, "");
   document.title=s;
 
   for (var i = 0, a = document.querySelectorAll("textarea"); i < a.length; i++) {
